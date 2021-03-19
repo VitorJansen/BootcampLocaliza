@@ -44,6 +44,44 @@ São soluções que permitem aplicações se comunicarem independentemente da li
 
 ### Estrutura SOAP
 
+##### O que é SOAP
+
+Simple Object Access Protocol
+É um protocolo, baseado em XML, que visa facilitar as integrações entre aplicações.
+Pode-se dizer que SOAP é uma definição de como serviços web se comunicam.
+
+##### As vantagens de se utilizar SOAP
+
+- Utiliza uma linguegem comum, XML, permitindo integração entre aplicações em diferentes linguagens. 
+- É independente de plataforma e software.
+- Meio de trandporte genérico, ou seja, pode ser usado por outros protocolos além do HTTP.
+
+##### O que é XML
+
+Extensible Markup Language
+Criada pela W3C, com o objetivo de padronizar o padrão da web. Essa linguagem tem como principal caracterísica ser universal, podendo ser integrada em deiversas aplicações.
+
+##### Entendendo a estrutura de uma mensagem SOAP 
+
+SOAP Envelope: Encapsula toda a mensagem SOAP. 
+SOAP Header: Gerencia os atributos e metadados da requisição.
+SOAP Body: Contém a mensagem em si.
+```sh
+# SOAP exemplo
+<soap:Envelope xmlns:soap="url">
+    <soap:Header>
+    </soap:Header>
+    <soap:Body>
+        <m:endereco>
+            <m:cep>9999-999</m:cep>
+            <m:bairro>Jd. Boa Vista</m:bairro>
+            <m:logradouro>Av. Paulista</m:logradouro>
+            <m:cidade>São Paulo</m:cidade>
+            <m:numero>99</m:numero>
+        </m:endereco>
+     </soap:Body>
+</soap:Envelope>
+```
 
 ### Entendendo o que é WSDL e XSD
 
