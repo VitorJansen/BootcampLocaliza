@@ -7,4 +7,4 @@ Repositório para armazenar os conteúdos e atividades desenvolvidas no Bootcamp
 
 Pasta: DIO.Bank
 Objetivo: Consolidação e aplicação dos conhecimentos em Programação Orientada à Objetos
-Conceitas abordados: Namespace, Classes, Objetos, Atributos, Enums, Encapsulamento, Construtores
+Conceitas abordados: Namespace, Classes, Objetos, Atributos, Enums, Encapsulamento, Construtores, Herança (override)
