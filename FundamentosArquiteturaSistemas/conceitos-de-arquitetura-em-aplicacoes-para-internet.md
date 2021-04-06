@@ -53,4 +53,11 @@ Contras
 - Plataforma inteira depende do gerenciador de pipeline.
 
 
-### Gerenciamento d erros e volume de acesso
+### Gerenciamento de erros e volume de acesso
+
+É mais complexo em processos assíncronos e em pipelines.
+
+No primeiro, pois não há rollback e o erro acaba ficando isolado.
+No segundo, pois além de fazer o rollback do próprio passo deve-se fazer o rollback dos passos anteriores.
+
+Solução: Dead letter queue ou Filas de re-tentativas (O que deu erro é enviado de volta para a fila para ser reprocessado).
